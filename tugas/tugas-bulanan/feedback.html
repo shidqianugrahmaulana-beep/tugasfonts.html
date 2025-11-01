@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Form Feedback</h1></header>
+
+  <nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="feedback.html" class="active">Feedback</a>
+  </nav>
+
+  <form class="feedback-form">
+    <label>Nama:</label>
+    <input type="text" name="nama" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Kesan:</label>
+    <textarea name="pesan" rows="4" required></textarea>
+
+    <label>Kategori:</label>
+    <select name="kategori">
+      <option>Saran</option>
+      <option>Kritik</option>
+      <option>Pujian</option>
+    </select>
+
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback – Website Profil Pribadi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Feedback</h1>
+</header>
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="biodata.html">Biodata</a>
+  <a href="jadwal.html">Jadwal</a>
+  <a href="galeri.html">Galeri</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+<div class="main-content box">
+  <h2>Tuliskan Feedback Anda</h2>
+  <form class="feedback-form" action="#" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="kategori">Kategori:</label>
+    <select id="kategori" name="kategori" required>
+      <option value="">--Pilih Kategori--</option>
+      <option value="saran">Saran</option>
+      <option value="kritik">Kritik</option>
+      <option value="pujian">Pujian</option>
+    </select>
+
+    <label for="komentar">Komentar:</label>
+    <textarea id="komentar" name="komentar" rows="4" required></textarea>
+
+    <input type="submit" value="Kirim">
+  </form>
+</div>
+<footer>
+  &copy; 2025 – Nama Anda
+</footer>
+</body>
+</html>

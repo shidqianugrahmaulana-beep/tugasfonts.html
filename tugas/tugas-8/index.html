@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas CSS Components</title>
+  <link rel="stylesheet" href="flexbox.css" />
+</head>
+<body>
+  <h1 class="page-title">🧩 Tugas CSS Components</h1>
+
+  <!-- 🔔 TUGAS 1: Alert Info -->
+  <section>
+    <h2>1️⃣ Alert Info</h2>
+    <div class="alert">
+      <p>ℹ️ Info: Pastikan data Anda sudah lengkap sebelum dikirim.</p>
+      <button class="close">×</button>
+    </div>
+  </section>
+
+  <!-- 👤 TUGAS 2: Profile Card -->
+  <section>
+    <h2>2️⃣ Profile Card</h2>
+    <div class="profile-card">
+      <div class="avatar">
+        <img src="assets/user.png" alt="User Photo" />
+        <span class="badge">Active</span>
+      </div>
+      <h3>Andika Putra</h3>
+      <p>Frontend Developer</p>
+    </div>
+  </section>
+
+  <!-- 💰 TUGAS 3: Pricing Cards -->
+  <section>
+    <h2>3️⃣ Pricing Cards</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p class="price">Rp50.000</p>
+        <ul>
+          <li>1 Project</li>
+          <li>Community Support</li>
+        </ul>
+        <button>Pilih Paket</button>
+      </div>
+
+      <div class="plan highlight">
+        <h3>Pro</h3>
+        <p class="price">Rp150.000</p>
+        <ul>
+          <li>5 Projects</li>
+          <li>Priority Support</li>
+        </ul>
+        <button>Pilih Paket</button>
+      </div>
+
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p class="price">Rp300.000</p>
+        <ul>
+          <li>Unlimited Projects</li>
+          <li>Dedicated Support</li>
+        </ul>
+        <button>Pilih Paket</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Event listener untuk menutup alert saat tombol X diklik
+    document.querySelector(".close").addEventListener("click", function() {
+      this.parentElement.style.display = "none";
+    });
+  </script>
+</body>
+</html>

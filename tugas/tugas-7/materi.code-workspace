@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../materi"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "tugas"
+	}
+}

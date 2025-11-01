@@ -1,0 +1,94 @@
+/* Background dengan pattern */
+body {
+  font-family: Arial, sans-serif;
+  background: url('images/background_html.jpg');
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #6b7280;
+}
+
+/* Box Konten */
+.box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section Title */
+.section-title {
+  padding-left: 10px;
+  border-left: 4px solid #22c55e;
+  color: #1e40af;
+}
+
+/* Avatar Internet (besar) */
+.avatar-internet {
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+/* Avatar Lokal (lebih kecil) */
+.avatar-local {
+  display: block;
+  margin: 10px auto;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1d4ed8;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* Quick Links */
+.quick-links a {
+  color: #1d4ed8;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.quick-links a:hover {
+  color: #22c55e;
+  text-decoration: underline;
+}

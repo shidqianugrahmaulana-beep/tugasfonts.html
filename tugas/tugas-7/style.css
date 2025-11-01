@@ -1,0 +1,36 @@
+header {
+    background: #a8e4f9;
+}
+nav {
+    background: #60c3e7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul {
+    gap: 13px;
+}
+nav li a {
+    color: #fff;
+    background: #3ea3c8;
+}
+/* media query = atur css di ukuran layar tertentu */
+/* 1024px => dekstop/laptop ++*/
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  /* masukkan tag / target selector */
+}
+
+    

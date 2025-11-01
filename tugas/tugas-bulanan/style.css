@@ -1,0 +1,151 @@
+/* === Style Dasar (Mobile First) === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background: #00695c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.logo {
+  width: 60px;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background: #009688;
+}
+.navbar a {
+  flex: 1 1 50%;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.navbar a:hover, .navbar a.active {
+  background: #004d40;
+}
+.judul-box {
+  border-left: 5px solid #00695c;
+  padding-left: 10px;
+}
+
+/* Galeri Grid */
+.galeri-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.galeri-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Biodata */
+.biodata-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.foto-diri {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.biodata-text {
+  margin-top: 15px;
+}
+
+/* Tabel */
+.tabel-wrapper {
+  overflow-x: auto;
+  padding: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+thead {
+  background: #009688;
+  color: white;
+}
+
+/* Form */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.feedback-form button {
+  background: #00695c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* === Tablet === */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .navbar a {
+    flex: 1 1 20%;
+  }
+  .biodata-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .galeri-grid img {
+    width: calc(50% - 10px);
+  }
+  .feedback-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .feedback-form label,
+  .feedback-form input,
+  .feedback-form select {
+    width: 48%;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+
+/* === Desktop === */
+@media (min-width: 1024px) {
+  .navbar a {
+    flex: 1;
+  }
+  .galeri-grid img {
+    width: calc(25% - 10px);
+  }
+  .biodata-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .feedback-form {
+    max-width: 800px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,149 @@
+/* Mobile-first styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background: #004aad;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #00337a;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 5px 10px;
+  padding: 8px 12px;
+}
+nav a:hover {
+  background: #00265a;
+  border-radius: 4px;
+}
+.main-content {
+  padding: 20px;
+}
+footer {
+  background: #00337a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Biodata section */
+.biodata-container {
+  display: flex;
+  flex-direction: column;
+}
+.biodata-photo {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+}
+.biodata-text {
+  text-align: center;
+}
+
+/* Galeri */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery .gallery-item {
+  flex: 100%;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Tabel jadwal wrapper for mobile */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Form feedback */
+.feedback-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea,
+.feedback-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.feedback-form input[type="submit"] {
+  background: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.feedback-form input[type="submit"]:hover {
+  background: #00337a;
+}
+
+/* Common boxes styling */
+.box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #004aad;
+  border-radius: 8px;
+}
+
+/* Media Queries */
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .biodata-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .biodata-photo {
+    margin: 0;
+    max-width: 250px;
+  }
+  .gallery .gallery-item {
+    flex: 50%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .gallery .gallery-item {
+    flex: 25%;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+  nav a {
+    margin: 0 15px;
+  }
+}

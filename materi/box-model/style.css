@@ -1,0 +1,43 @@
+.card {
+  background: #07bff1;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #f9f7f7;
+  border-radius: 6px;
+}
+.area {
+  width: 200px;
+  height: 200px;
+  place-content: center;
+}
+
+.area h3,
+.area p {
+  margin: 5 auto;
+}
+.area p {
+  font-size: 14px;
+  color: #8e8b8e;
+}
+#Box-a{
+  background: blueviolet;
+}
+#Box-b{
+  background: red;
+  padding:30px ;
+}
+#Box-c{
+  background: yellow;
+  padding: 30px;
+  border: 10px solid mediumorchid;
+}
+#Box-D{
+  background: #f70b0b;
+  padding: 30px;
+  border: 10px solid mediumorchid ;
+  margin: 50px;
+}
+
